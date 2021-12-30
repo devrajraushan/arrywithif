@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            display: block;
+            margin: 10px;
+            padding: 6px;
+            outline: none;
+        }
+        span{
+            margin: 12px;
+            color: tomato;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;            
+        }
+        #btn{
+            width: 85px;
+            padding: 8px;
+            outline: none;
+            background-color: rgb(197, 190, 188);
+            color: rgb(235, 220, 220);
+            border: none;
+            margin-left: 10px;                      
+           
+        }
+        #check {
+            
+            margin-left: 10px;
+            margin-right: -2px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="form" method="get">
+    <input type="text" id="user" class = "name" placeholder="First">
+    <span id="user_text"></span>
+    <input type="text" id="user_two" class = "name" placeholder="Last">
+    <span id="textuser_two"></span>
+
+    <input type="email" id="email" placeholder="Email" class="name" required = "required">
+    <span id="my_email"></span>
+
+    <input type="number" id="num" class = "name" placeholder="Number">
+    <span id="my_num"></span>
+    <input type="number" id="re_num" class = "name" placeholder="Re-Number">
+    <span id="re_numText"></span>
+
+    <input type="password" id="pass" class = "name" placeholder="Password">
+    <span id="my_pass"></span>
+    <br />
+    <input type="checkbox" id="check" onclick="dev()"><span>Show Password</span>
+    <br />
+    <br />
+    <input type="submit" id = "btn"  onclick=" return call()">
+
+</form>
+
+<script src="java.js"></script>
+</body>
+</html>
